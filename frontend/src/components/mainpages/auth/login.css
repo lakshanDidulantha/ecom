@@ -1,0 +1,68 @@
+.paper{
+    margin-top: spacing(8);
+    display: 'flex';
+    flex-direction: 'column';
+    align-items: 'center';
+  }
+  .avatar{
+    margin: theme-spacing(1);
+  }
+  .form{
+    width: '100%';
+    margin-top: (1);
+  }
+  .submit{
+      background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)';
+      margin: (3, 0, 2);
+      color: '#fff';
+  }
+  .card{
+      margin-top: '60px';
+      padding-left: '20px';
+      padding-right: '20px';
+      padding-bottom: '20px';
+  }
+  .pointer {
+      cursor: 'pointer';
+      color: 'red'
+  }
+
+
+.login-page{
+    max-width: 500px;
+    border: 2px solid rgb(3, 165, 206);
+    border-radius: 5px;
+    padding: 30px;
+    margin: 50px auto;
+}
+.login-page h2{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #555;
+}
+.login-page form input,
+.login-page form button{
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    padding: 0 5px;
+    outline: rgb(3, 165, 206);
+    border: 1px solid rgb(3, 165, 206);
+}
+.login-page form .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-page form button{
+    width: 150px;
+    background: rgb(3, 165, 206);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.login-page form a{
+    color: orange;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}

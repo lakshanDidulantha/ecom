@@ -1,0 +1,143 @@
+.product_cards__item__img {
+  position: absolute;
+  border-radius: 10px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  transition: all 0.2s linear;
+}
+
+.product_cards__item__img:hover {
+  transform: scale(1.1);
+}
+
+.product_cards__item__link {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  
+}
+.product_cards__item__pic-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.product__wrapper {
+  position: relative;
+  margin: 50px 0 45px;
+}
+
+.product__items {
+  margin-bottom: 24px;
+}
+
+.product_card{
+  max-width: 300px;
+  overflow: hidden;
+  height: 600px;
+  padding: 10px;
+  box-shadow: 0 0 15px #ddd;
+  margin: 10px 0;
+  position: relative;
+}
+
+.product_card img{
+  width: 100%;
+  height: 400px;
+  display: block;
+  object-fit: cover;
+}
+.product_box h2{
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 10px;
+  white-space: nowrap;
+  text-transform: capitalize;
+  cursor: pointer;
+  color: #323232;
+  margin-bottom: 24px;
+}
+.product_card span{
+  color: crimson;
+}
+.product_box p{
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  height: 70px;
+  overflow: hidden;
+  color: #323232;
+}
+.row_btn{
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+.row_btn a{
+  width: 45%;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 8px;
+}
+#btn_buy{
+  border-radius: 10px;
+  background: #16b014;
+  margin-right: 5px;
+}
+#btn_view{
+  border-radius: 10px;
+  background: #db0d4b;
+  margin-left: 5px;
+}
+.product_card input{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: -290px;
+
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+  .content__blog__container {
+    width: 84%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cards__items {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .cards__item {
+    margin-bottom: 2rem;
+  }
+}
+
+
