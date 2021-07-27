@@ -41,7 +41,7 @@ function OrderHistory() {
             }
             getHistory()
         }
-    }, [token, isAdmin, setHistory]);
+    }, [token, isAdmin, setHistory, axiosInstance]);
 
     return (
         <Container className={classes.container}>

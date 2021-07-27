@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import React,{createContext,useEffect,useState} from "react";
 import ProductsAPI from "./API/ProductsAPI";
 import UserAPI from "./API/UserAPI";
@@ -22,7 +21,7 @@ export const DataProvider =({children})=>{
             }, 15000);
         }
         refreshToken()
-    }, []);
+    }, [axiosInstance]);
 
     const state={
         token:[token,setToken],

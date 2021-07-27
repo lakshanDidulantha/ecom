@@ -1,4 +1,4 @@
-/* eslint-disable react-hooks/exhaustive-deps */
+
 import {useState, useEffect} from 'react'
 import axios from 'axios'
 import {toast} from 'react-toastify';
@@ -29,7 +29,7 @@ function UserAPI(token) {
             }
             getUser()
         }
-    },[token])
+    },[token,axiosInstance ])
 
 
     const addCart = async (product) => {

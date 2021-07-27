@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import {useState, useEffect} from 'react'
 import axios from 'axios'
 
@@ -7,7 +6,7 @@ function CategoriesAPI() {
     const [callback, setCallback] = useState(false)
     const axiosInstance = axios.create({
         baseURL: process.env.REACT_APP_API_URL,
-    })
+    });
 
     useEffect(() => {
         const getCategories = async () => {
@@ -15,8 +14,8 @@ function CategoriesAPI() {
             setCategories(res.data)
         }
 
-        getCategories()
-    }, [callback]);
+        getCategories();
+    }, [callback, axiosInstance]);
     return {
         categories: [categories, setCategories],
         callback: [callback, setCallback]

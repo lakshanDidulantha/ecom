@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import {useState, useEffect} from 'react'
 import axios from 'axios'
 
@@ -22,7 +21,7 @@ function ProductsAPI() {
             setResult(res.data.result)
         }
         getProducts()
-    },[callback, category, sort, search, page])
+    },[callback, category, sort, search, page,axiosInstance])
     
     return {
         products: [products, setProducts],
