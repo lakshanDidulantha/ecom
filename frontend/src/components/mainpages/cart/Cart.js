@@ -46,7 +46,6 @@ function Cart() {
       addToCart([])
       toast.success("You have successfully placed an order.")
   }
-
  if(cart.length=== 0) 
         return <h2 style={{textAlign: "center",  margin: '30px', textTransform: 'uppercase',letterSpacing: '1.2px'}}>Cart Empty</h2> 
    
